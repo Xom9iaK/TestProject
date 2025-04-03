@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    style-src 'self' 'unsafe-inline' fonts.googleapis.com;
+    font-src 'self' fonts.gstatic.com;
+    script-src 'self' 'unsafe-inline';
+    img-src 'self' data:;
+    media-src 'self' https://rutube.ru;
+    frame-src 'self' https://rutube.ru;
+  ">
+  <title>Магазин продуктов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header" id="videoHeader">
+      <div class="header-background" id="headerBackground"></div>
+      
+      <div class="video-container" id="videoContainer">
+        <div class="video-wrapper" id="videoWrapper"></div>
+        <button class="video-close-button" id="videoCloseButton" type="button">
+          <span class="close-icon">&times;</span>
+          Скрыть видео
+          
+        </button>
+      </div>
+      
+      <div class="header__overlay"></div>
+      <div class="header__content">
+        <button class="header__button" id="videoButton">
+          <span class="button-text">Смотреть видео</span>
+          <span class="button-arrow"></span>
+        </button>
+      </div>
+    </header>
+    
+    <main class="products-grid">
+      <div class="products-grid__container">
+        <section class="product-card product-card--large" style="background-image: url('img/peas.jpeg')">
+          <div class="product-card__icons">
+            <button class="product-card__icon product-card__icon--heart">
+              <svg viewBox="0 0 24 24" width="27" height="22">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="white" stroke-width="2.5"/>
+              </svg>
+            </button>
+            <button class="product-card__icon product-card__icon--eye">
+              <svg viewBox="0 0 24 24" width="27" height="22">
+                <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.105-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z" fill="white"/>
+                <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-badges">
+            <div class="product-badge product-badge--discount">-29%</div>
+            <div class="product-badge product-badge--day-product">Товар дня</div>
+          </div>
+          <div class="product-card__overlay"></div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Горох в стручках, 1кг</h2>
+            <div class="product-card__footer">
+              <div class="product-card__price">570₽</div>
+              <button class="product-card__button">Оставить заявку</button>
+            </div>
+          </div>
+        </section>
+        
+        <div class="products-grid__small">
+          <section class="product-card product-card--small" style="background-image: url('img/blueberry.jpeg')">
+            <div class="product-card__icons">
+              <button class="product-card__icon product-card__icon--heart">
+                <svg viewBox="0 0 24 24" width="27" height="22">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="white" stroke-width="2.5"/>
+                </svg>
+              </button>
+              <button class="product-card__icon product-card__icon--eye">
+                <svg viewBox="0 0 24 24" width="27" height="22">
+                  <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.105-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z" fill="white"/>
+                  <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+            <div class="product-badges">
+              <div class="product-badge product-badge--newdiscount">-31%</div>
+              <div class="product-badge product-badge--sale">Распродажа</div>
+            </div>
+            <div class="product-card__overlay"></div>
+            <div class="product-card__content">
+              <h2 class="product-card__title">Голубика лесная, 200г</h2>
+              <div class="product-card__footer">
+                <div class="product-card__price">140₽</div>
+                <button class="product-card__button">Оставить заявку</button>
+              </div>
+            </div>
+          </section>
+          
+          <section class="product-card product-card--small" style="background-image: url('img/carrot.jpeg')">
+            <div class="product-card__icons">
+              <button class="product-card__icon product-card__icon--heart">
+                <svg viewBox="0 0 24 24" width="27" height="22">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="white" stroke-width="2.5"/>
+                </svg>
+              </button>
+              <button class="product-card__icon product-card__icon--eye">
+                <svg viewBox="0 0 24 24" width="27" height="22">
+                  <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.105-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z" fill="white"/>
+                  <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+            <div class="product-badges">
+              <div class="product-badge product-badge--popular">Хит</div>
+            </div>
+            <div class="product-card__overlay"></div>
+            <div class="product-card__content">
+              <h2 class="product-card__title">Морковь мытая, 1кг</h2>
+              <div class="product-card__footer">
+                <div class="product-card__price">140₽</div>
+                <button class="product-card__button">Оставить заявку</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <div class="products-grid__vertical vertical-slider">
+          <section class="product-card product-card--vertical slider-item active">
+            <div class="product-card__image-container" style="background-image: url('img/popcorn.jpeg')">
+              <div class="product-card__icons">
+                <button class="product-card__icon product-card__icon--heart">
+                  <svg viewBox="0 0 24 24" width="27" height="22">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="white" stroke-width="2.5"/>
+                  </svg>
+                </button>
+                <button class="product-card__icon product-card__icon--eye">
+                  <svg viewBox="0 0 24 24" width="27" height="22">
+                    <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.105-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z" fill="white"/>
+                    <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z" fill="white"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-badges">
+                <div class="product-badge product-badge--sale">Распродажа</div>
+              </div>
+              <div class="product-card__overlay"></div>
+            </div>
+            <div class="product-card__content">
+              <h2 class="product-card__title">Попкорн карамельный, 100г</h2>
+              <div class="product-card__vertical-footer">
+                <div class="product-card__price">160₽</div>
+                <button class="product-card__button">Оставить заявку</button>
+              </div>
+            </div>
+          </section>
+          
+          <section class="product-card product-card--vertical slider-item inactive">
+            <div class="product-card__image-container" style="background-image: url('img/eskimo.jpeg')">
+              <div class="product-card__icons">
+                <button class="product-card__icon product-card__icon--heart">
+                  <svg viewBox="0 0 24 24" width="27" height="22">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="white" stroke-width="2.5"/>
+                  </svg>
+                </button>
+                <button class="product-card__icon product-card__icon--eye">
+                  <svg viewBox="0 0 24 24" width="27" height="22">
+                    <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.105-.316C21.927 11.617 19.633 5 12 5zm0 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z" fill="white"/>
+                    <path d="M12 10c-1.084 0-2 .916-2 2s.916 2 2 2 2-.916 2-2-.916-2-2-2z" fill="white"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-badges">
+                <div class="product-badge product-badge--popular">Хит</div>
+              </div>
+              <div class="product-card__overlay"></div>
+            </div>
+            <div class="product-card__content">
+              <h2 class="product-card__title">Эскимо с малиной, 150</h2>
+              <div class="product-card__vertical-footer">
+                <div class="product-card__price">190₽</div>
+                <button class="product-card__button">Оставить заявку</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-dot active" data-slide-index="0"></button>
+          <button class="slider-dot" data-slide-index="1"></button>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <script src="js/main.min.js"></script>
+  <script src="js/slider.min.js"></script>
+  <script src="js/video.min.js"></script>
+
+  <div class="modal" id="orderModal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2 class="modal-title">Оставить заявку</h2>
+      <form id="orderForm" class="order-form">
+        <div class="form-group">
+          <input type="text" id="userName" name="userName" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="userPhone" name="userPhone" placeholder="Номер телефона" required>
+        </div>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="userAgreement" name="userAgreement" required>
+          <label for="userAgreement">Я соглашаюсь на обработку персональных данных</label>
+        </div>
+        <button type="submit" class="submit-button">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+
